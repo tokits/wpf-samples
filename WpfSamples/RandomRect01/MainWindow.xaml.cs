@@ -51,8 +51,6 @@ namespace RandomRect01
         /// </summary>
         private void InitializeTimer()
         {
-            timer = new DispatcherTimer(DispatcherPriority.Render);
-
             timer.Interval = new TimeSpan(0, 0, 0, 0, 10);
 
             timer.Tick += (e, s) => {
