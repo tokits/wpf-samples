@@ -1,0 +1,19 @@
+﻿<Window x:Class="ThumbSample03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThumbSample03"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas Name="myCanvas" Width="170" Height="170"
+                Background="RoyalBlue">
+            <Thumb Name="myThumb" Canvas.Bottom="0" Canvas.Right="0"
+                   Background="PaleGoldenrod" Width="14" Height="14"
+                   DragStarted="onDragStarted"
+                   DragDelta="onDragDelta" DragCompleted="onDragCompleted" />
+            <Button x:Name="button" Content="Button" Margin="333,146,0,0" Height="139" Width="139" Canvas.Left="-316" Canvas.Top="-134"/>
+        </Canvas>
+    </Grid>
+</Window>

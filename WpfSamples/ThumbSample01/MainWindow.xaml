@@ -1,0 +1,23 @@
+﻿<Window x:Class="ThumbSample01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThumbSample01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <TextBlock Canvas.Left="0" Canvas.Top="0" Height="22" Name="textPos" Width="75" Text="x:0 y:0" />
+        <Thumb Canvas.Left="37" Canvas.Top="30" Height="30" Name="mark"  Width="30" Background="LightBlue"
+               DragCompleted="mark_DragCompleted"
+               DragStarted="mark_DragStarted"
+               DragDelta="mark_DragDelta"
+               >
+            <Thumb.Template>
+                <ControlTemplate TargetType="Thumb">
+                    <Ellipse Fill="LightBlue" Width="30" Height="30" />
+                </ControlTemplate>
+            </Thumb.Template>
+        </Thumb>
+    </Canvas>
+</Window>
