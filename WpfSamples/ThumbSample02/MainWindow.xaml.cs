@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,6 +52,11 @@ namespace ThumbSample02
                 {
                     border.BorderThickness = new Thickness(0);
                 }
+                var image2 = border.Child as Image;
+                Debug.WriteLine($"{image2}");
+
+                var image1 = thumb.Template.FindName("image", thumb) as Image;
+                Debug.WriteLine($"{image1}");
             }
         }
 

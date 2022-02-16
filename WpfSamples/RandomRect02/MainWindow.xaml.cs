@@ -52,7 +52,7 @@ namespace RandomRect02
         {
             timer.Interval = new TimeSpan(0, 0, 0, 0, 10);
 
-            timer.Tick += (e, s) => {
+            timer.Tick += (s, e) => {
                 // drawingGroupに対して上書きで矩形を書いていく
                 using (DrawingContext drawContent = drawingGroup.Append())
                 {
@@ -70,7 +70,7 @@ namespace RandomRect02
                 }
 
             };
-            this.Closing += (e, s) => { timer.Stop(); };
+            this.Closing += (s, e) => { timer.Stop(); };
         }
 
         /// <summary>

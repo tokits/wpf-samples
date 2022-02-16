@@ -16,7 +16,7 @@
             <Thumb.Template>
                 <ControlTemplate>
                     <Border x:Name="Thumb_Border" BorderBrush="Red" BorderThickness="1">
-                        <Image Source="/testimage.png" />
+                        <Image x:Name="image" Source="/testimage.png" />
                     </Border>
                 </ControlTemplate>
             </Thumb.Template>

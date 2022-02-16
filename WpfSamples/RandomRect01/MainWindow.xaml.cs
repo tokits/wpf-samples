@@ -53,7 +53,7 @@ namespace RandomRect01
         {
             timer.Interval = new TimeSpan(0, 0, 0, 0, 10);
 
-            timer.Tick += (e, s) => {
+            timer.Tick += (s, e) => {
                 double x = rondom.Next(0, (int)this.grid.ActualWidth);
                 double y = rondom.Next(0, (int)this.grid.ActualHeight);
                 double width = rondom.Next(0, (int)(this.grid.ActualWidth - x));
@@ -77,7 +77,7 @@ namespace RandomRect01
                 }
 
             };
-            this.Closing += (e, s) => { timer.Stop(); };
+            this.Closing += (s, e) => { timer.Stop(); };
         }
 
         /// <summary>
