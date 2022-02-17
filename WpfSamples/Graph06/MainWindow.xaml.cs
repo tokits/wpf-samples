@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScottPlot.Plottable;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,18 +41,27 @@ namespace Graph06
 
         public int PatternIndex { get; set; }
 
+        private SignalPlot sig;
+
         public MainWindow()
         {
             InitializeComponent();
 
             PatternIndex = 0;
 
-            wpfPlot.Plot.AddSignal(displayData);
+            sig = wpfPlot.Plot.AddSignal(displayData);
+            //sig.OffsetX = DateTime.Now.ToOADate();
             wpfPlot.Plot.AxisAutoX(margin: 0);
             wpfPlot.Plot.SetAxisLimits(yMin: -1.5, yMax: 1.5);
             VerticalLine = wpfPlot.Plot.AddVerticalLine(0, System.Drawing.Color.Red, 2);
             wpfPlot.Configuration.Pan = false;  // マウスによる移動不可
             wpfPlot.Configuration.Zoom = false; // マウスによるズーム不可
+            //var culture = System.Globalization.CultureInfo.CreateSpecificCulture("hu"); // Hungarian
+            //wpfPlot.Plot.SetCulture(culture);
+            //wpfPlot.Plot.XAxis.DateTimeFormat(true);
+            //wpfPlot.Plot.YAxis.Label("Power");
+            //wpfPlot.Plot.XAxis.Label("Time");
+            //wpfPlot.Plot.XAxis2.Label("Sample Graph");
 
             UpdateData();
 
@@ -87,6 +97,8 @@ namespace Graph06
             VerticalLine.X = (src_index - 1) % displayData.Length;
             if (src_index >= liveData.Length) src_index = 0;
             if (dst_index >= displayData.Length) dst_index = 0;
+
+            //sig.OffsetX = DateTime.Now.ToOADate();
 
             wpfPlot.Refresh();
         }
