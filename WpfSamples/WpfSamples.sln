@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graph04", "Graph04\Graph04.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graph05", "Graph05\Graph05.csproj", "{3C574FA0-B7B3-472C-BF08-860E7E173B4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph06", "Graph06\Graph06.csproj", "{CEEF3FF6-6E0E-4947-A03A-170846201C52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graph06", "Graph06\Graph06.csproj", "{CEEF3FF6-6E0E-4947-A03A-170846201C52}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graph07", "Graph07\Graph07.csproj", "{F28972D4-D570-4937-BDF3-EADA877D0969}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{CEEF3FF6-6E0E-4947-A03A-170846201C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEEF3FF6-6E0E-4947-A03A-170846201C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEEF3FF6-6E0E-4947-A03A-170846201C52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F28972D4-D570-4937-BDF3-EADA877D0969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28972D4-D570-4937-BDF3-EADA877D0969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F28972D4-D570-4937-BDF3-EADA877D0969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F28972D4-D570-4937-BDF3-EADA877D0969}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
