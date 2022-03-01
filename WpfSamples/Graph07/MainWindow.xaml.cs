@@ -70,8 +70,8 @@ namespace Graph07
 
 
             // PVグラフ
-            wpfPlot.Configuration.Pan = false;  // マウスによる移動不可
-            wpfPlot.Configuration.Zoom = false; // マウスによるズーム不可
+            //wpfPlot.Configuration.Pan = false;  // マウスによる移動不可
+            //wpfPlot.Configuration.Zoom = false; // マウスによるズーム不可
 
             wpfPlot.Plot.AxisAutoX(margin: 0);
             wpfPlot.Plot.SetAxisLimits(yMin: -1.5, yMax: 1.5);
