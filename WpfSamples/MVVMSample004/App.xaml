@@ -1,0 +1,34 @@
+﻿<Application x:Class="MVVMSample004.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MVVMSample004"
+             xmlns:ui="http://schemas.modernwpf.com/2019"
+             xmlns:vm="clr-namespace:MVVMSample004.ViewModels.Pages"
+             xmlns:pg="clr-namespace:MVVMSample004.Views.Pages"
+             StartupUri="Views/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ui:ThemeResources />
+                <ui:XamlControlsResources />
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Other app resources here -->
+            <DataTemplate DataType="{x:Type vm:StartPageViewModel}">
+                <pg:StartPage />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vm:Setting1PageViewModel}">
+                <pg:Setting1Page />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vm:Setting2PageViewModel}">
+                <pg:Setting2Page />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vm:EndPageViewModel}">
+                <pg:EndPage />
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

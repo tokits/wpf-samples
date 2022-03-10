@@ -1,0 +1,32 @@
+﻿<Window x:Class="MVVMSample001.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVMSample001.Views"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        xmlns:vm="clr-namespace:MVVMSample001.ViewModels"
+        Title="MainWindow"
+        Height="350"
+        Width="300"
+        d:DataContext="{d:DesignInstance Type=vm:MainWindowViewModel, IsDesignTimeCreatable=True}"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        ResizeMode="CanResizeWithGrip"
+        mc:Ignorable="d"
+        >
+    <Window.DataContext>
+        <vm:MainWindowViewModel />
+    </Window.DataContext>
+    <StackPanel>
+        <!--  入力数値  -->
+        <TextBox Margin="10" Text="{Binding Value1, UpdateSourceTrigger=PropertyChanged}" />
+        <TextBox Margin="10" Text="{Binding Value2, UpdateSourceTrigger=PropertyChanged}" />
+        <!--  計算ボタン  -->
+        <Button
+            Margin="10"
+            Command="{Binding CalculateCommand}"
+            Content="Calculate" />
+        <!--  計算結果  -->
+        <TextBlock Margin="10" Text="{Binding Result}" />
+    </StackPanel>
+</Window>
