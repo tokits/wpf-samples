@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ModernWpf;
+using SourceChord.FluentWPF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +19,13 @@ namespace MVVMSample004.Views
     /// <summary>
     /// MainWindow.xaml の相互作用ロジック
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
         public MainWindow()
         {
             InitializeComponent();
+
+            ThemeManager.Current.ApplicationTheme = ModernWpf.ApplicationTheme.Light;
         }
     }
 }

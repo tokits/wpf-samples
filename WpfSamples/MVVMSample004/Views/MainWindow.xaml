@@ -1,10 +1,11 @@
-﻿<Window x:Class="MVVMSample004.Views.MainWindow"
+﻿<fw:AcrylicWindow x:Class="MVVMSample004.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MVVMSample004.Views"
         xmlns:ui="http://schemas.modernwpf.com/2019"
+        xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
         xmlns:vm="clr-namespace:MVVMSample004.ViewModels"
         ResizeMode="CanResizeWithGrip"        
         mc:Ignorable="d"
@@ -41,4 +42,4 @@
                 Content="次へ &gt;" />
         </StackPanel>
     </Grid>
-</Window>
+</fw:AcrylicWindow>
