@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMSample003", "MVVMSample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMSample004", "MVVMSample004\MVVMSample004.csproj", "{9B8A2951-EE8E-4E88-A11A-7AA87898478B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMSample005", "MVVMSample005\MVVMSample005.csproj", "{9CB02637-8ADA-4E1A-BC09-380021344DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMSample006", "MVVMSample006\MVVMSample006.csproj", "{14707C8C-F813-44D8-9F1F-92C34CE9848F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +121,14 @@ Global
 		{9B8A2951-EE8E-4E88-A11A-7AA87898478B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B8A2951-EE8E-4E88-A11A-7AA87898478B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B8A2951-EE8E-4E88-A11A-7AA87898478B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB02637-8ADA-4E1A-BC09-380021344DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB02637-8ADA-4E1A-BC09-380021344DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB02637-8ADA-4E1A-BC09-380021344DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB02637-8ADA-4E1A-BC09-380021344DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14707C8C-F813-44D8-9F1F-92C34CE9848F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14707C8C-F813-44D8-9F1F-92C34CE9848F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14707C8C-F813-44D8-9F1F-92C34CE9848F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14707C8C-F813-44D8-9F1F-92C34CE9848F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
