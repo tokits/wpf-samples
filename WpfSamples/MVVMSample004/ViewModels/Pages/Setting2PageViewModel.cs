@@ -28,6 +28,17 @@ namespace MVVMSample004.ViewModels.Pages
             set => SetProperty(ref _text2, value);
         }
 
+        private int _number;
+
+        /// <summary>
+        /// 数値
+        /// </summary>
+        public int Number
+        {
+            get => _number;
+            set => SetProperty(ref _number, value);
+        }
+
         /// <summary>
         /// 設定文字列取得
         /// </summary>
@@ -36,6 +47,7 @@ namespace MVVMSample004.ViewModels.Pages
         {
             yield return $"{nameof(Text1)}={Text1}";
             yield return $"{nameof(Text2)}={Text2}";
+            yield return $"{nameof(Number)}={Number}";
         }
 
         /// <summary>

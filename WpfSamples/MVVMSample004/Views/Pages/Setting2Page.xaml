@@ -14,5 +14,7 @@
         <TextBlock Margin="0,0,0,20" Text="{Binding PageTitle, Mode=OneTime}" />
         <TextBox Margin="0,0,0,5" Text="{Binding Text1}" />
         <TextBox Margin="0,0,0,5" Text="{Binding Text2}" />
+        <ui:NumberBox LargeChange="1" SmallChange="1" Minimum="0" Maximum="10" Value="0"
+    SpinButtonPlacementMode="Inline" TextAlignment="Right"/>
     </StackPanel>
 </UserControl>
