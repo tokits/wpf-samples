@@ -11,7 +11,8 @@
         Title="MainWindow"
         Height="350"
         Width="525"
-        ui:WindowHelper.UseModernWindowStyle="True">
+        ui:WindowHelper.UseModernWindowStyle="True"
+        ui:ThemeManager.RequestedTheme="Light">
     <Window.DataContext>
         <vm:MainWindowViewModel />
     </Window.DataContext>

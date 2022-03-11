@@ -10,8 +10,9 @@
         Height="350"
         Width="300"
         d:DataContext="{d:DesignInstance Type=vm:MainWindowViewModel, IsDesignTimeCreatable=True}"
-        ui:WindowHelper.UseModernWindowStyle="True"
         ResizeMode="CanResizeWithGrip"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        ui:ThemeManager.RequestedTheme="Light"
         mc:Ignorable="d"
         >
     <Window.DataContext>

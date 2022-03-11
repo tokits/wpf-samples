@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MVVMSample002.Views"
         xmlns:ui="http://schemas.modernwpf.com/2019"
-        ui:WindowHelper.UseModernWindowStyle="True"
         xmlns:vm="clr-namespace:MVVMSample002.ViewModels"
         d:DataContext="{d:DesignInstance Type=vm:MainWindowViewModel, IsDesignTimeCreatable=True}"
         xmlns:cb="clr-namespace:CalcBinding;assembly=CalcBinding"
@@ -13,6 +12,8 @@
         Title="MainWindow"
         Height="250"
         Width="200"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        ui:ThemeManager.RequestedTheme="Light"        
         mc:Ignorable="d">
     <Window.DataContext>
         <vm:MainWindowViewModel />

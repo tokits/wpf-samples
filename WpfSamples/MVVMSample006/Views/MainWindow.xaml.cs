@@ -28,9 +28,6 @@ namespace MVVMSample006.Views
         public MainWindow()
         {
             InitializeComponent();
-
-            //ThemeManager.Current.ApplicationTheme = ModernWpf.ApplicationTheme.Light;
-            ThemeManager.Current.ApplicationTheme = ModernWpf.ApplicationTheme.Dark;
         }
     }
 }

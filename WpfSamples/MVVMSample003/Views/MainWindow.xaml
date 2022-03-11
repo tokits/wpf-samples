@@ -9,9 +9,11 @@
         d:DataContext="{d:DesignInstance Type=vm:MainWindowViewModel, IsDesignTimeCreatable=True}"
         mc:Ignorable="d"
         Title="MainWindow"
-        ui:WindowHelper.UseModernWindowStyle="True"
         Height="350"
-        Width="226.803">
+        Width="226.803"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        ui:ThemeManager.RequestedTheme="Light"
+        >
     <Window.DataContext>
         <vm:MainWindowViewModel />
     </Window.DataContext>
