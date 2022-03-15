@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using MVVMSample006.Models;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.Reflection;
 
 namespace MVVMSample006.ViewModels
 {
@@ -110,6 +112,8 @@ namespace MVVMSample006.ViewModels
 
         private bool CanExecute()
         {
+            Debug.WriteLine($"{MethodBase.GetCurrentMethod().Name}()");
+
             double dummy;
             if (!double.TryParse(Lhs, out dummy))
             {

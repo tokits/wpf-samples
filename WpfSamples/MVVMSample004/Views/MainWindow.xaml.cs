@@ -25,7 +25,8 @@ namespace MVVMSample004.Views
         {
             InitializeComponent();
 
-            ThemeManager.Current.ApplicationTheme = ModernWpf.ApplicationTheme.Light;
+            // XAMLで指定可能
+            //ThemeManager.Current.ApplicationTheme = ModernWpf.ApplicationTheme.Light;
         }
     }
 }
